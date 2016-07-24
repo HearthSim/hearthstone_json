@@ -15,8 +15,8 @@ class HearthstoneJSON
         JSON.parse(response.body)
     end
 
-    def enums
-        []
+    def enums(options = {})
+        JSON.parse(HTTParty.get("#{API_URL_BASE}/#{API_VER}/enums.json", options).body)
     end
 
     private
