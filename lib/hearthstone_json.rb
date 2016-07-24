@@ -8,7 +8,7 @@ class HearthstoneJSON
 
     base_uri "#{API_URL_BASE}/#{API_VER}"
 
-    def initialize(locale = 'enUS', data_ver = 'latest')
+    def initialize(data_ver = 'latest', locale = 'enUS')
         @full_uri = "#{base_uri}/#{data_ver}/#{locale}"
     end
 
