@@ -6,10 +6,12 @@ class HearthstoneJSON
     API_URL_BASE = 'https://api.hearthstonejson.com'.freeze
     API_VER = 'v1'.freeze
 
-    base_uri "#{API_URL_BASE}/#{API_VER}"
-
     def initialize(data_ver = 'latest', locale = 'enUS')
-        @full_uri = "#{base_uri}/#{data_ver}/#{locale}"
+        self.class.base_uri "#{API_URL_BASE}/#{API_VER}/#{data_ver}/#{locale}"
+    end
+
+    def enums
+        []
     end
 
     private
