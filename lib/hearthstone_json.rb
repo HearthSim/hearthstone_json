@@ -1,0 +1,2 @@
+class HearthstoneJSON
+end
