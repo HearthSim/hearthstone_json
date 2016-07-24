@@ -2,6 +2,8 @@ language: ruby
 branches:
     only:
         - master
+install:
+    - bundle install --path vendor/bundle --binstubs
 addons:
     code_climate:
         repo_token: f23e6eee6e2f47484c2e6b3637790837238a69f4e4db450cdabc8bca88031d93
