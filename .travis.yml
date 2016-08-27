@@ -1,13 +1,20 @@
 language: ruby
 rvm:
-    - 2.3.0
+- 2.3.1
 branches:
-    only:
-        - master
+  only:
+  - development
+  - master
 install:
-    - bundle install --path vendor/bundle --binstubs
+- bundle install --path vendor/bundle --binstubs
 script:
-    - bundle exec rspec --format doc
+- bundle exec rspec --format doc
+deploy:
+  provider: rubygems
+  on:
+    branch: master
+  api_key:
+    secure: gtOcdJTsGswt6C9DSI3kEvEw3ZEfNyz8lddJ7KXTIn1KXeLRRIMJ8KFSLIx5cDTzjixaQNa0a2VfnVnXarP88zK6rWRBMgEf7Y6U6AqOFhzOzAGiZIFk1FTNlJ7sGEM1VKE3pb9h3RklQdLmWfiQRE0Lgbqy4sY7USp+yy8lF5WOf2oXFoS11dsp1Mu20g2Bg9hFqpXulew1jNeKCZ4bfGxqWwHKOWjlawa/zjYx7Oxy3fF+qzzYJz0bVLxjoTEBk3h8RD8BGX1z78V5YqfdVr0vPVkQ8Vinz6v18COu5vwXZ6OnJ06nX8+mirK0hTO8iMbbOqItWOrRTZiRdZqZlP6ZOcMxhEre277yj08PG65ctbLmZuYCho1uqpy8OTc2toIOt81HOYoqrwu73Bw5eBmTfzQ2TPHBW/xdU/yL1ras8ARfexVEm4OZ/rPUExoFAgHwVhy0AZldBthDUKS467QBJdESRjA28ccGl8MNr2tMjgwhByYdNZtz3HIZ2S30425CrmPzzYtjErRaIrPxTehRFZwTJO/1+VLrh7bxd3cWMSn8jOr7aHYI2qzPnBynadgn2epFr4F5cQfOCk3CxbOnSr/2wIXWFmrdX3uVykywFi/+adzIrU8ikvyb3xhvAUn3liCAGHUg4cOhxmMadYEgy6Y1OfAFC248zdaqelY=
 addons:
-    code_climate:
-        repo_token: f23e6eee6e2f47484c2e6b3637790837238a69f4e4db450cdabc8bca88031d93
+  code_climate:
+    repo_token: f23e6eee6e2f47484c2e6b3637790837238a69f4e4db450cdabc8bca88031d93
