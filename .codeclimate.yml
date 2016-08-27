@@ -1,7 +1,16 @@
----
 engines:
-  fixme:
+  rubocop:
     enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - ruby
 ratings:
-  paths: []
-exclude_paths: []
+  paths:
+    - lib/**
+    - "**.rb"
+exclude_paths:
+  - bin/*
+  - spec/**/*
+  - "**/vendor/**/*"
