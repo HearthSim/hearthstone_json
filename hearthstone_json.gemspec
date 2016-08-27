@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'hearthstone_json'
-  s.version = '0.0.5'
+  s.version = '0.0.6'
   s.date = '2016-07-24'
   s.summary = 'Ruby gem for hearthstonejson.com'
   s.description =
