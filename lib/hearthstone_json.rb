@@ -20,6 +20,10 @@ class HearthstoneJSON
     )
   end
 
+  def cardbacks(options = {})
+    get_json('/cardbacks.json', options)
+  end
+
   private
 
   attr_accessor :locale

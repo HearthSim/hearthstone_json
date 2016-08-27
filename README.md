@@ -8,7 +8,10 @@ Ruby gem for easily getting up to date info from https://hearthstonejson.com
 ## Usage
 
 `#enums`  
-Returns the results of https://api.hearthstonejson.com/v1/enums.json
+Results: https://api.hearthstonejson.com/v1/enums.json  
+  
+`#cardbacks`  
+Results: https://api.hearthstonejson.com/v1/latest/enUS/cardbacks.json
 
 [travis-link]: https://travis-ci.org/tinnvec/hearthstone_json
 [travis-badge]: https://img.shields.io/travis/tinnvec/hearthstone_json.svg?maxAge=2592000&style=flat-square
