@@ -1,5 +1,6 @@
 require 'httparty'
 
+# HearthstoneJSON Class
 class HearthstoneJSON
   include HTTParty
 
