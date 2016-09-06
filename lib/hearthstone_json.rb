@@ -24,6 +24,11 @@ class HearthstoneJSON
     get_json('/cardbacks.json', options)
   end
 
+  def cards(include_uncollectible = false, options = {})
+    return get_json('/cards.json', options) if include_uncollectible
+    get_json('/cards.collectible.json', options)
+  end
+
   private
 
   attr_accessor :locale
