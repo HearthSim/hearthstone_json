@@ -4,6 +4,8 @@ Gem::Specification.new do |s|
   s.name = 'hearthstone_json'
   s.version = '0.1.0'
   s.date = '2016-09-06'
+  s.add_runtime_dependency 'httparty', ['>= 0.13.7']
+  s.add_development_dependency 'rspec', ['>= 3.5.0']
   s.summary = 'Ruby gem for hearthstonejson.com'
   s.description =
     'Ruby gem for easily getting up to date info from hearthstonejson.com'
