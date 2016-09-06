@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'hearthstone_json'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.date = '2016-09-06'
   s.add_runtime_dependency 'httparty', ['>= 0.13.7']
   s.add_development_dependency 'rspec', ['>= 3.5.0']
